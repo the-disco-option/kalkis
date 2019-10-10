@@ -20,3 +20,31 @@
 .App-link {
   color: #09d3ac;
 }
+
+.keypad-grid {
+  display: grid;
+}
+
+.keypad-button {
+  display: block;
+  height: 2.2em;
+  width: 2.2em;
+
+  border: 1px solid #282c34;
+  border-radius: 100%;
+  background-image: linear-gradient(to top left, #3a7bd5, #3a6073);
+  will-change: background-image;
+  transition: background-image 1s;
+}
+
+.keypad-button:focus {
+  background-image: linear-gradient(to top left, #00d2ff, #928dab);
+}
+
+.keypad-button:hover {
+  background-image: linear-gradient(to top left, #00a5d3, #69b470);
+}
+
+.keypad-button:active {
+  background-image: linear-gradient(to top left, #17c9fa, #92fe9d);
+}
