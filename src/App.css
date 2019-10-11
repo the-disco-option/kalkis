@@ -23,17 +23,19 @@
 
 .keypad-grid {
   display: grid;
-  grid-auto-rows: 100px;
-  grid-auto-columns: 100px;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  align-items: stretch;
+  gap: 1px;
 }
 
 .keypad-button {
   display: block;
-  height: 2.2em;
-  width: 2.2em;
+  min-height: 2.2em;
+  min-width: 2.2em;
 
   border: 1px solid #282c34;
-  border-radius: 100%;
+  border-radius: 2em;
   background-image: linear-gradient(to top left, #3a7bd5, #3a6073);
   will-change: background-image;
   transition: background-image 1s;
@@ -53,8 +55,8 @@
 
 .layout-keypad {
   grid-template:
-    "clear divide multiply backspace" 1fr
-    "seven eight nine minus" 1fr
+    "clear divide multiply backspace"
+    "seven eight nine minus"
     "four five six plus"
     "one two three equals"
     "percent zero decimal equals";
