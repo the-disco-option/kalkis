@@ -23,6 +23,8 @@
 
 .keypad-grid {
   display: grid;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
 }
 
 .keypad-button {
@@ -47,4 +49,13 @@
 
 .keypad-button:active {
   background-image: linear-gradient(to top left, #17c9fa, #92fe9d);
+}
+
+.layout-keypad {
+  grid-template:
+    "clear divide multiply backspace" 1fr
+    "seven eight nine minus" 1fr
+    "four five six plus"
+    "one two three equals"
+    "percent zero decimal equals";
 }
